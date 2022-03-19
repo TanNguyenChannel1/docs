@@ -587,3 +587,231 @@ p!pokemon --atkiv = 25
 ```
 
 </details>
+
+#### --bids
+
+> Bộ lọc các con Pokémon bạn đã bid.&#x20;
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--bids
+
+\--bid
+
+\--b
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:red;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark> <mark style="color:red;"></mark><mark style="color:red;"><mark style="color:green;"><mark style="color:green;"></mark>&#x20;
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
+
+#### --caught
+
+> Bộ lọc danh sách những con bạn đã bắt ít nhất một lần xuất hiện trong **pokedex**.
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--caught
+
+\--cau
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:red;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:red;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark> <mark style="color:red;"></mark><mark style="color:red;"><mark style="color:green;"><mark style="color:green;"></mark>&#x20;
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
+
+#### --defiv `<integer>`
+
+> Bộ lọc những con có số Defense IV nhất định. Bạn có thể dùng `>`, `<` hoặc `=` (thường `=` được bỏ qua) để hiện những con có IV lớn hơn/bé hơn/bằng với tìm kiếm.
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--defiv
+
+\--def
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+
+
+Pokémon với DEF IV lớn hơn 20
+
+```
+p!pokemon --defiv > 20
+```
+
+Pokémon với DEF IV dưới 30
+
+```
+p!pokemon --defiv < 30
+```
+
+Pokémon với DEF IV lớn hơn 20 nhưng dưới 30
+
+```
+p!pokemon --defiv > 20 --defiv < 30
+```
+
+Pokémon với DEF IV là 25
+
+```
+p!pokemon --defiv 25
+p!pokemon --defiv = 25
+```
+
+</details>
+
+#### --embedcolor
+
+> Bộ lọc danh sách các Pokémon có thể áp dụng [mã màu nhúng](https://cdn.discordapp.com/attachments/850044183188078633/935513947702960138/IMG\_20220125\_180818.jpg).
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--embed
+
+\--ec
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --ends `<duration>`
+
+> Bộ lọc danh sách các cuộc đấu giá `<theo thời gian> cần có một con số và đơn vị thời gian.&#x20;
+>
+> * `ms` là mili giây
+> * `s` là giây
+> * `m` là phút
+> * `h` là giờ
+> * `d` là ngày
+> * `w` là tuần
+>
+> Ví dụ. `1h`, `1hour`, `2d`
+
+![p!auction search --name Ralts --ends 1hour liệt kê những con Ralts kết thúc trước 1 giờ. ](../.gitbook/assets/Picsart\_22-01-30\_19-56-55-408.jpg)
+
+![p!auction search --name Ralts --ends 30m liệt kê những con Ralts kết thúc trước 30 phút. ](../.gitbook/assets/Picsart\_22-01-30\_19-58-18-800.jpg)
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:red;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark> <mark style="color:red;"></mark><mark style="color:red;"><mark style="color:green;"><mark style="color:green;"></mark>&#x20;
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
