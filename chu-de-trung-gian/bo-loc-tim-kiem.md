@@ -815,3 +815,260 @@ p!pokemon --defiv = 25
 <mark style="color:red;">unfavoriteall</mark>
 
 </details>
+
+#### --event
+
+> Bộ lọc các Pokémon có được từ những sự kiện của Pokétwo; có độ hiếm là Event trong dex.
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--event
+
+\--ev
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+{% content-ref url="events.md" %}
+[events.md](events.md)
+{% endcontent-ref %}
+
+#### --favorite
+
+> Bộ lọc liệt kê những con Pokémon yêu thích. Những con Pokémon đó có biểu tượng "♥️" sau tên.
+>
+> {% hint style="info" %}
+> Bạn có thể yêu thích/hủy yêu thích bằng câu lệnh favorite/unfavorite hoặc favoriteall/unfavoriteall.
+> {% endhint %}
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--fav
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:red;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:red;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark> <mark style="color:green;"></mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --galarian
+
+> Bộ lọc những con Pokémon đến từ vùng Galar và có dạng galarian.
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--galar
+
+\--gal
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Pokémon</summary>
+
+* [Galarian Articuno](https://pokemondb.net/pokedex/articuno)
+* [Galarian Corsola](https://pokemondb.net/pokedex/corsola)
+* [Galarian Darumaka](https://pokemondb.net/pokedex/darumaka)
+* [Galarian Farfetch'd](https://pokemondb.net/pokedex/farfetchd)
+* [Galarian Linoone](https://pokemondb.net/pokedex/linoone)
+* [Galarian Meowth](https://pokemondb.net/pokedex/meowth)
+* [Galarian Moltres](https://pokemondb.net/pokedex/moltres)
+* [Galarian Mr. Mime](https://pokemondb.net/pokedex/mr-mime)
+* [Galarian Ponyta](https://pokemondb.net/pokedex/ponyta)
+* [Galarian Rapidash](https://pokemondb.net/pokedex/rapidash)
+* [Galarian Slowbro](https://pokemondb.net/pokedex/slowbro)
+* [Galarian Slowking](https://pokemondb.net/pokedex/slowking)
+* [Galarian Slowpoke](https://pokemondb.net/pokedex/slowpoke)
+* [Galarian Standard Darmanitan](https://pokemondb.net/pokedex/darmanitan)
+* [Galarian Stunfisk](https://pokemondb.net/pokedex/stunfisk)
+* [Galarian Weezing](https://pokemondb.net/pokedex/weezing)
+* [Galarian Yamask](https://pokemondb.net/pokedex/yamask)
+* [Galarian Zapdos](https://pokemondb.net/pokedex/zapdos)
+* [Galarian Zigzagoon](https://pokemondb.net/pokedex/zigzagoon)
+
+</details>
+
+#### --hextuple  `<integer>`
+
+> Bộ lọc liệt kê những con Pokémon có sáu chỉ số đều giống nhau.
+
+![Ví dụ, khi dùng p!pokemon --hextuple 31 thì nó sẽ khớp chỉ số với con dưới đây.](../.gitbook/assets/IMG\_20220125\_220828.jpg)
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--six
+
+\--hex
+
+\--hexa
+
+\--sextuple
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --hpiv `<integer>`
+
+> Filter for pokémon with the specified HP IV. You can use `>`, `<` or `=` to show greater than, less than or equal to the specified integer.
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--hp
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+Pokémon with HP IV greater than 20
+
+```
+p!pokemon --hpiv > 20
+```
+
+Pokémon with HP IV less than 30
+
+```
+p!pokemon --hpiv < 30
+```
+
+Pokémon with HP IV greater than 20 but less than 30
+
+```
+p!pokemon --hpiv > 20 --hpiv < 30
+```
+
+Pokémon with HP IV equal to 25
+
+```
+p!pokemon --hpiv 25
+p!pokemon --hpiv = 25
+```
+
+</details>
