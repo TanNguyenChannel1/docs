@@ -119,23 +119,17 @@ Trang web này cũng như trang web gốc vẫn đang trong giai đoạn phát t
 
 **Bỏ qua:** [--skip](search-filters.md#skip-less-than-integer-greater-than)
 
-
-
 \[**auction search** only]
 
 **Thứ tự bid (từ thấp đến cao):** [--bids](search-filters.md#bids)
 
 **Thời gian kết thúc (từ thấp đến cao):** [--ends](search-filters.md#ends-less-than-duration-greater-than)
 
-
-
 \[**auction search** and **market search** only]
 
 **Sắp xếp:** [--order](search-filters.md#order-less-than-order-greater-than)
 
 **Của bản thân:** [--mine](search-filters.md#mine)
-
-&#x20;
 
 \[**pokedex** only]
 
@@ -153,7 +147,7 @@ Trang web này cũng như trang web gốc vẫn đang trong giai đoạn phát t
 
 Các bộ lọc bắt đầu bằng `--` và trong số đó có thể dùng [ở một số câu lệnh nhất định](search-filters.md#supported-commands) để có thể tìm kiếm Pokémon nhanh và dễ dàng hơn.
 
-Ví dụ, nếu người dùng muốn thêm tất cả Ralts vào trong trade, điều này có thể thực hiện bằng cách dùng bộ lọc [`--name`](search-filters.md#name-less-than-name-greater-than) ở câu lệnh `trade addall`.&#x20;
+Ví dụ, nếu người dùng muốn thêm tất cả Ralts vào trong trade, điều này có thể thực hiện bằng cách dùng bộ lọc [`--name`](search-filters.md#name-less-than-name-greater-than) ở câu lệnh `trade addall`.
 
 ### Các câu lệnh hỗ trợ
 
@@ -311,7 +305,7 @@ Xem danh sách các bộ lọc đầy đủ tại [**đây**](search-filters.md#
 5. [--orderd](search-filters.md#orderd)
 6. [--region](search-filters.md#region-less-than-region-greater-than)
 7. [--type](search-filters.md#type-less-than-type-greater-than)
-8. [--ub](https://app.gitbook.com/o/v6Hu8g8ZTlGEzK8GZO2X/s/V8TpJwvEXrp8bgi2enWi/\~/changes/Jsti1rFh7TzR0xPjJrG8/intermediate-topics/search-filters#ub)
+8. [--ub](https://app.gitbook.com/s/V8TpJwvEXrp8bgi2enWi/intermediate-topics/search-filters#ub)
 9. [--uncaught](search-filters.md#uncaught)
 
 </details>
@@ -431,7 +425,7 @@ Một số bộ lọc cũng có tên viết tắt. Ví dụ, bộ lọc `--name`
 * `--nam`
 * `--name`
 
-<mark style="color:yellow;">Lưu ý:</mark> bot sẽ đưa ra <mark style="color:red;">**lỗi tùy chọn không rõ ràng**</mark> nếu hai hoặc nhiều bộ lọc trùng với cùng một chữ viết tắt. Ví dụ, `--m` có thể dẫn đến `--mega` và `--mythical`, tuy nhiên, có một vài ngoại lệ ở đây:&#x20;
+<mark style="color:yellow;">Lưu ý:</mark> bot sẽ đưa ra <mark style="color:red;">**lỗi tùy chọn không rõ ràng**</mark> nếu hai hoặc nhiều bộ lọc trùng với cùng một chữ viết tắt. Ví dụ, `--m` có thể dẫn đến `--mega` và `--mythical`, tuy nhiên, có một vài ngoại lệ ở đây:
 
 1. `--n` dẫn đến `--name`
 2. `--t` dẫn đến `--type`
@@ -444,7 +438,7 @@ Một vài ví dụ về sử dụng bộ lọc:
 
 ![Hiển thị những con Ralts có biệt danh là Example](../.gitbook/assets/IMG\_20220124\_150155.jpg)
 
-![--type được sử dụng hai lần ](../.gitbook/assets/IMG\_20220130\_183721.jpg)
+![--type được sử dụng hai lần](../.gitbook/assets/IMG\_20220130\_183721.jpg)
 
 ### Danh sách các bộ lọc
 
@@ -452,7 +446,7 @@ Các bộ lọc dưới đây được xếp theo bảng chữ cái.
 
 [Index](search-filters.md#contents)
 
-> #### --alolan
+> **--alolan**
 
 > Bộ lọc những con Pokémon đến từ Alola và được xác định là dạng alolan.
 
@@ -486,7 +480,7 @@ Các bộ lọc dưới đây được xếp theo bảng chữ cái.
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -503,7 +497,7 @@ Các bộ lọc dưới đây được xếp theo bảng chữ cái.
 * [Alolan Graveler](https://pokemondb.net/pokedex/graveler)
 * [Alolan Golem](https://pokemondb.net/pokedex/golem)
 * [Alolan Grimer](https://pokemondb.net/pokedex/grimer)
-* [Alolan Muk ](https://pokemondb.net/pokedex/muk)
+* [Alolan Muk](https://pokemondb.net/pokedex/muk)
 * [Alolan Marowak](https://pokemondb.net/pokedex/marowak)
 * [Alolan Meowth](https://pokemondb.net/pokedex/meowth)
 * [Alolan Persian](https://pokemondb.net/pokedex/persian)
@@ -551,7 +545,7 @@ Các bộ lọc dưới đây được xếp theo bảng chữ cái.
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -590,7 +584,7 @@ p!pokemon --atkiv = 25
 
 #### --bids
 
-> Bộ lọc các con Pokémon bạn đã bid.&#x20;
+> Bộ lọc các con Pokémon bạn đã bid.
 
 <details>
 
@@ -622,7 +616,7 @@ p!pokemon --atkiv = 25
 
 <mark style="color:red;">releaseall</mark>
 
-<mark style="color:red;">trade addall</mark> <mark style="color:red;"></mark><mark style="color:red;"><mark style="color:green;"><mark style="color:green;"></mark>&#x20;
+<mark style="color:red;">trade addall</mark>
 
 <mark style="color:red;">unfavoriteall</mark>
 
@@ -660,7 +654,7 @@ p!pokemon --atkiv = 25
 
 <mark style="color:red;">releaseall</mark>
 
-<mark style="color:red;">trade addall</mark> <mark style="color:red;"></mark><mark style="color:red;"><mark style="color:green;"><mark style="color:green;"></mark>&#x20;
+<mark style="color:red;">trade addall</mark>
 
 <mark style="color:red;">unfavoriteall</mark>
 
@@ -698,7 +692,7 @@ p!pokemon --atkiv = 25
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -707,8 +701,6 @@ p!pokemon --atkiv = 25
 <details>
 
 <summary>Examples</summary>
-
-
 
 Pokémon với DEF IV lớn hơn 20
 
@@ -769,7 +761,7 @@ p!pokemon --defiv = 25
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -777,7 +769,7 @@ p!pokemon --defiv = 25
 
 #### --ends `<duration>`
 
-> Bộ lọc danh sách các cuộc đấu giá `<theo thời gian> cần có một con số và đơn vị thời gian.&#x20;
+> Bộ lọc danh sách các cuộc đấu giá \`\<theo thời gian> cần có một con số và đơn vị thời gian.
 >
 > * `ms` là mili giây
 > * `s` là giây
@@ -788,9 +780,9 @@ p!pokemon --defiv = 25
 >
 > Ví dụ. `1h`, `1hour`, `2d`
 
-![p!auction search --name Ralts --ends 1hour liệt kê những con Ralts kết thúc trước 1 giờ. ](../.gitbook/assets/Picsart\_22-01-30\_19-56-55-408.jpg)
+![p!auction search --name Ralts --ends 1hour liệt kê những con Ralts kết thúc trước 1 giờ.](../.gitbook/assets/Picsart\_22-01-30\_19-56-55-408.jpg)
 
-![p!auction search --name Ralts --ends 30m liệt kê những con Ralts kết thúc trước 30 phút. ](../.gitbook/assets/Picsart\_22-01-30\_19-58-18-800.jpg)
+![p!auction search --name Ralts --ends 30m liệt kê những con Ralts kết thúc trước 30 phút.](../.gitbook/assets/Picsart\_22-01-30\_19-58-18-800.jpg)
 
 <details>
 
@@ -810,7 +802,7 @@ p!pokemon --defiv = 25
 
 <mark style="color:red;">releaseall</mark>
 
-<mark style="color:red;">trade addall</mark> <mark style="color:red;"></mark><mark style="color:red;"><mark style="color:green;"><mark style="color:green;"></mark>&#x20;
+<mark style="color:red;">trade addall</mark>
 
 <mark style="color:red;">unfavoriteall</mark>
 
@@ -848,7 +840,7 @@ p!pokemon --defiv = 25
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -861,10 +853,10 @@ p!pokemon --defiv = 25
 #### --favorite
 
 > Bộ lọc liệt kê những con Pokémon yêu thích. Những con Pokémon đó có biểu tượng "♥️" sau tên.
->
-> {% hint style="info" %}
+
+{% hint style="info" %}
 > Bạn có thể yêu thích/hủy yêu thích bằng câu lệnh favorite/unfavorite hoặc favoriteall/unfavoriteall.
-> {% endhint %}
+{% endhint %}
 
 <details>
 
@@ -892,7 +884,7 @@ p!pokemon --defiv = 25
 
 <mark style="color:red;">releaseall</mark>
 
-<mark style="color:red;">trade addall</mark> <mark style="color:green;"></mark>&#x20;
+<mark style="color:red;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -930,7 +922,7 @@ p!pokemon --defiv = 25
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -962,7 +954,7 @@ p!pokemon --defiv = 25
 
 </details>
 
-#### --hextuple  `<integer>`
+#### --hextuple `<integer>`
 
 > Bộ lọc liệt kê những con Pokémon có sáu chỉ số đều giống nhau.
 
@@ -1000,7 +992,7 @@ p!pokemon --defiv = 25
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
@@ -1036,7 +1028,7 @@ p!pokemon --defiv = 25
 
 <mark style="color:green;">releaseall</mark>
 
-<mark style="color:green;">trade addall</mark>&#x20;
+<mark style="color:green;">trade addall</mark>
 
 <mark style="color:green;">unfavoriteall</mark>
 
