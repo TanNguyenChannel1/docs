@@ -1000,11 +1000,11 @@ p!pokemon --defiv = 25
 
 #### --hpiv `<integer>`
 
-> Filter for pokémon with the specified HP IV. You can use `>`, `<` or `=` to show greater than, less than or equal to the specified integer.
+> Bộ lọc những con có số HP IV nhất định. Bạn có thể dùng `>`, `<` hoặc `=` (thường `=` được bỏ qua) để hiện những con có IV lớn hơn/bé hơn/bằng với tìm kiếm.
 
 <details>
 
-<summary>Commonly used aliases</summary>
+<summary>Bộ lọc viết tắt</summary>
 
 \--hp
 
@@ -1012,7 +1012,7 @@ p!pokemon --defiv = 25
 
 <details>
 
-<summary>Commands</summary>
+<summary>Dùng được cho lệnh</summary>
 
 <mark style="color:green;">auction search</mark>
 
@@ -1038,29 +1038,553 @@ p!pokemon --defiv = 25
 
 <summary>Examples</summary>
 
-Pokémon with HP IV greater than 20
+Pokémon với HP IV hơn 20
 
 ```
 p!pokemon --hpiv > 20
 ```
 
-Pokémon with HP IV less than 30
+Pokémon với HP IV dưới 30
 
 ```
 p!pokemon --hpiv < 30
 ```
 
-Pokémon with HP IV greater than 20 but less than 30
+Pokémon với HP IV hơn 20 nhưng dưới 30
 
 ```
 p!pokemon --hpiv > 20 --hpiv < 30
 ```
 
-Pokémon with HP IV equal to 25
+Pokémon với HP IV là 25
 
 ```
 p!pokemon --hpiv 25
 p!pokemon --hpiv = 25
+```
+
+</details>
+
+ 
+
+#### --iv `<integer/decimal>`
+
+> Bộ lọc những con có tổng chỉ số IV nhất định. Bạn có thể dùng `>`, `<` hoặc `=` (thường `=` được bỏ qua) để hiện những con có IV lớn hơn/bé hơn/bằng với tìm kiếm. Nhập một số tự nhiên bất kì và nó sẽ cho ra bất cứ dạng thập phân có thể của nó. Ví dụ. `--iv 67` sẽ hiện IVs `67.20%` và `67.74%` (miễn là 67<68 IVs).
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+Pokémon với tổng IV hơn 20
+
+```
+p!pokemon --iv > 20
+```
+
+Pokémon với tổng IV dưới 30
+
+```
+p!pokemon --iv < 30
+```
+
+Pokémon với tổng IV hơn 20 nhưng dưới 30
+
+```
+p!pokemon --iv > 20 --iv < 30
+```
+
+Pokémon vớ tổng IV có số 25
+
+```
+p!pokemon --iv 25
+p!pokemon --iv = 25
+```
+
+</details>
+
+#### --legendary
+
+> Bộ lọc những con [Legendary pokémon](https://nintendo.fandom.com/wiki/Legendary\_Pok%C3%A9mon) (là những Pokémon có độ hiếm là Legendary, có thể xem qua dex.) Ví dụ: Raikou.
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--leg
+
+\--legend
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark> (cannot be used alongside other rarity filters)
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --level `<integer>`
+
+> Bộ lọc những con có số cấp độ nhất định. Bạn có thể dùng `>`, `<` hoặc `=` (thường `=` được bỏ qua) để hiện những con có IV lớn hơn/bé hơn/bằng với tìm kiếm.
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--lev
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Ví dụ</summary>
+
+Pokémon với cấp độ hơn 20
+
+```
+p!pokemon --level > 20
+```
+
+Pokémon với cấp độ dưới 30
+
+```
+p!pokemon --level < 30
+```
+
+Pokémon với cấp độ hơn 20 nhưng dưới 30
+
+```
+p!pokemon --level > 20 --level < 30
+```
+
+Pokémon với cấp độ bằng 25
+
+```
+p!pokemon --level 25
+p!pokemon --level = 25
+```
+
+</details>
+
+#### --limit `<integer>`
+
+> Bộ lọc giới hạn số Pokémon xuất hiện. Cho dù bạn có nhiều Pokémon đi chăng nữa thì miễn là giới hạn đó được hỗ trợ thì nó vẫn sẽ xuất hiện giới hạn như bình thường thôi.
+
+![Ví dụ: Trong ảnh này xuất hiện có 3 Pokémon cho dù trong túi đồ còn rất nhiều Pokémon khác.](../.gitbook/assets/IMG\_20220126\_140500.jpg)
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--lim
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --mega
+
+> Bộ lọc những con Pokémon ở dạng mega. (bằng cách mua tiến hóa Mega cho Pokémon của bạn ở **p!shop 6**)
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Pokémon</summary>
+
+* [Mega Venusaur](https://pokemondb.net/pokedex/venusaur)
+* [X Mega Charizard](https://pokemondb.net/pokedex/charizard)
+* [Y Mega Charizard](https://pokemondb.net/pokedex/charizard)
+* [Mega Blastoise](https://pokemondb.net/pokedex/blastoise)
+* [Mega Beedrill](https://pokemondb.net/pokedex/beedrill)
+* [Mega Pidgeot](https://pokemondb.net/pokedex/pidgeot)
+* [Mega Alakazam](https://pokemondb.net/pokedex/alakazam)
+* [Mega Slowbro](https://pokemondb.net/pokedex/slowbro)
+* [Mega Gengar](https://pokemondb.net/pokedex/gengar)
+* [Mega Kangaskhan](https://pokemondb.net/pokedex/kangaskhan)
+* [Mega Pinsir](https://pokemondb.net/pokedex/pinsir)
+* [Mega Gyarados](https://pokemondb.net/pokedex/gyarados)
+* [Mega Aerodactyl](https://pokemondb.net/pokedex/aerodactyl)
+* [X Mega Mewtwo](https://pokemondb.net/pokedex/mewtwo)
+* [Y Mega Mewtwo](https://pokemondb.net/pokedex/mewtwo)
+* [Mega Ampharos](https://pokemondb.net/pokedex/ampharos)
+* [Mega Steelix](https://pokemondb.net/pokedex/steelix)
+* [Mega Scizor](https://pokemondb.net/pokedex/scizor)
+* [Mega Heracross](https://pokemondb.net/pokedex/heracross)
+* [Mega Houndoom](https://pokemondb.net/pokedex/houndoom)
+* [Mega Tyranitar](https://pokemondb.net/pokedex/tyranitar)
+* [Mega Sceptile](https://pokemondb.net/pokedex/sceptile)
+* [Mega Blaziken](https://pokemondb.net/pokedex/blaziken)
+* [Mega Swampert](https://pokemondb.net/pokedex/swampert)
+* [Mega Gardevoir](https://pokemondb.net/pokedex/gardevoir)
+* [Mega Sableye](https://pokemondb.net/pokedex/sableye)
+* [Mega Mawile](https://pokemondb.net/pokedex/mawile)
+* [Mega Aggron](https://pokemondb.net/pokedex/aggron)
+* [Mega Medicham](https://pokemondb.net/pokedex/medicham)
+* [Mega Manectric](https://pokemondb.net/pokedex/manectric)
+* [Mega Sharpedo](https://pokemondb.net/pokedex/sharpedo)
+* [Mega Camerupt](https://pokemondb.net/pokedex/camerupt)
+* [Mega Altaria](https://pokemondb.net/pokedex/altaria)
+* [Mega Banette](https://pokemondb.net/pokedex/banette)
+* [Mega Absol](https://pokemondb.net/pokedex/absol)
+* [Mega Glalie](https://pokemondb.net/pokedex/glalie)
+* [Mega Salamence](https://pokemondb.net/pokedex/salamence)
+* [Mega Metagross](https://pokemondb.net/pokedex/metagross)
+* [Mega Latias](https://pokemondb.net/pokedex/latias)
+* [Mega Latios](https://pokemondb.net/pokedex/latios)
+* [Mega Kyogre](https://pokemondb.net/pokedex/kyogre)
+* [Mega Groudon](https://pokemondb.net/pokedex/groudon)
+* [Mega Rayquaza](https://pokemondb.net/pokedex/rayquaza)
+* [Mega Lopunny](https://pokemondb.net/pokedex/lopunny)
+* [Mega Garchomp](https://pokemondb.net/pokedex/garchomp)
+* [Mega Lucario](https://pokemondb.net/pokedex/lucario)
+* [Mega Abomasnow](https://pokemondb.net/pokedex/abomasnow)
+* [Mega Gallade](https://pokemondb.net/pokedex/gallade)
+* [Mega Audino](https://pokemondb.net/pokedex/audino)
+* [Mega Diancie](https://pokemondb.net/pokedex/diancie)
+
+</details>
+
+#### --mine
+
+> Bộ lọc danh sách những Pokémon trên market hay auction của bạn mà chưa ai mua hoặc chưa kết thúc.&#x20;
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--mi
+
+\--listings
+
+\--list
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark>
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
+
+#### --mythical
+
+> Bộ lọc các [Mythical pokémon](https://nintendo.fandom.com/wiki/Mythical\_Pok%C3%A9mon) (có độ hiếm là Mythical từ dex.) Ví dụ: Darkrai.
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--mythic
+
+\--myth
+
+\--my
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark> (cannot be used alongside other rarity filters)
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --name `<name>`
+
+> Bộ lọc danh sách Pokémon có tên như tìm kiếm, không phải biệt danh. Tên có thể dùng từ dex.
+
+![Những tên ở Pokédex này có thể dùng cho --name](../.gitbook/assets/IMG\_20220125\_195037.jpg)
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--n
+
+\--name (why this here?)
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --nickname `<nickname>`
+
+> Bộ lọc các danh sách có biệt danh theo tìm kiếm. Có thể dùng bộ lọc này cùng một lúc.&#x20;
+>
+> {% hint style="info" %}
+> **Bạn có thể dùng bộ lọc này với câu lệnh `nickall` để đổi tên một nhóm nào đó nhanh hơn. Ví dụ: `p!nickall tên mới --nickname tên cũ`**
+> {% endhint %}
+
+<details>
+
+<summary>Bộ lọc viết tắt</summary>
+
+\--ni
+
+\--nick
+
+</details>
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --order `<order>`
+
+> Filter for sorting the pokémon shown in **market search** and **auction search** in a specific order. This filter can only be used _once_ per command.
+>
+> Options for `<order>`:
+>
+> {% hint style="info" %}
+> **Optionally add a `-` or `+` at the end of an option for descending(`-`) or ascending(`+`) order of that option, otherwise it uses the default (descending for `iv` and `level` and ascending for the rest).**
+> {% endhint %}
+>
+> * `iv` - Sort by the total IV of pokémon.
+> * `level` - Sort by the level of pokémon.
+> * \[**auction search** only]:
+>   * `bid` - Sort by the **Current Bid** of auctions.
+>   * `ends` - Sort by the remaining duration of auctions
+> * \[**market search** only]:
+>   * `price` - Sort by the **Price** of market listings.
+>   * `id` - Sort by the [ID](https://cdn.discordapp.com/attachments/768175554402058313/936668421217734656/IMG\_20220128\_223543.jpg)s of market listings.
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--o
+
+\--or
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark>
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+Order **market search** by `price` ascending (low to high)
+
+```
+p!market search --order price
+p!market search --order price+
+```
+
+Order **auction search** by `iv` descending
+
+```
+p!auction search --order iv
+p!auction search --order iv-
 ```
 
 </details>
