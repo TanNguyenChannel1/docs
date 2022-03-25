@@ -1588,3 +1588,302 @@ p!auction search --order iv-
 ```
 
 </details>
+
+#### --ordera
+
+> Bộ lọc thứ tự những con Pokémon bắt được từ ít nhất đến nhiều nhất.&#x20;
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:red;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:red;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark>
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
+
+#### --orderd
+
+> Bộ lọc thứ tự những con Pokémon bắt được từ nhiều nhất đến ít nhất.
+
+<details>
+
+<summary>Dùng được cho lệnh</summary>
+
+<mark style="color:red;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:red;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark>
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
+
+#### --pentuple `<integer>`
+
+> Bộ lọc liệt kê những con Pokémon có 5 chỉ số đều giống nhau, bất kì trong các chỉ số `HP`, `ATK`, `DEF`, `SPATK`, `SPDEF` and `SPD` IVs, cao hơn 5 cũng sẽ được liệt kê.
+
+![E.g. this pokémon would match the criteria for p!pokemon --pentuple 31 because it has 5 equal stat IVs that are 31.](../.gitbook/assets/IMG\_20220128\_235049.jpg)
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--five
+
+\--pent
+
+\--penta
+
+\--quintuple
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --quadruple `<integer>`
+
+> Bộ lọc liệt kê những con Pokémon có 4 chỉ số đều giống nhau, bất kì trong các chỉ số `HP`, `ATK`, `DEF`, `SPATK`, `SPDEF` and `SPD` IVs, Cao hơn 4 cũng sẽ được liệt kê.
+
+![E.g. this pokémon would match the criteria for p!pokemon --quadruple 31 because it has 4 equal stat IVs that are 31.](../.gitbook/assets/IMG\_20220128\_235159.jpg)
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--four
+
+\--quad
+
+\--quadra
+
+\--tetra
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --region `<region>`
+
+> Filter for pokémon that are from the region `<region>`.&#x20;
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--r
+
+\--reg
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Regions</summary>
+
+1. [Kanto](https://pokemondb.net/pokedex/national#gen-1)
+2. [Johto](https://pokemondb.net/pokedex/national#gen-2)
+3. [Hoenn](https://pokemondb.net/pokedex/national#gen-3)
+4. [Sinnoh](https://pokemondb.net/pokedex/national#gen-4)
+5. [Unova](https://pokemondb.net/pokedex/national#gen-5)
+6. [Kalos](https://pokemondb.net/pokedex/national#gen-6)
+7. [Alola](https://pokemondb.net/pokedex/national#gen-7)
+8. [Galar](https://pokemondb.net/pokedex/national#gen-8)
+
+</details>
+
+#### --shiny
+
+> Filter for viewing shiny pokémon. Shiny pokémon have a ✨ next to their name.
+
+{% hint style="danger" %}
+**Beware of fake shinies! Some dishonest users may attempt to decieve others by nicknaming their pokémon** `✨` **and selling it as a legitimate shiny. Fake shinies have quotes around the emoji: "**✨**". Always double check, and with this filter where possible.**
+{% endhint %}
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--sh
+
+\--shi
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --skip `<integer>`
+
+> Filter to exclude a certain number of pokémon from the beginning when using a command. For example, you may use this filter to favorite all Ralts except the first 5 using `p!favoriteall --n Ralts --skip 5`. &#x20;
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--sk
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+Show all Ralts on auction except the first 3
+
+```
+p!auction search --name Ralts --skip 3
+```
+
+Nickname all Ralts except the first 3
+
+```
+p!nickall NICK --name Ralts --skip 3
+```
+
+Add all Ralts to a trade except the first 3
+
+```
+p!trade addall --name Ralts --skip 3
+```
+
+</details>
