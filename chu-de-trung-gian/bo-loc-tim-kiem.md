@@ -1518,26 +1518,26 @@ p!pokemon --level = 25
 
 #### --order `<order>`
 
-> Filter for sorting the pokémon shown in **market search** and **auction search** in a specific order. This filter can only be used _once_ per command.
+> Bộ lọc liệt kê những con Pokémon theo một thứ tự tìm kiếm nhất định trên market và auction, chỉ dùng được một lần.
 >
 > Options for `<order>`:
 >
 > {% hint style="info" %}
-> **Optionally add a `-` or `+` at the end of an option for descending(`-`) or ascending(`+`) order of that option, otherwise it uses the default (descending for `iv` and `level` and ascending for the rest).**
+> **Nếu như bạn không thêm `+` hoặc `-` phía sau tiền tố lọc thì nó sẽ mặc định là theo thứ tự từ cao đến thấp đối với cấp độ và iv, còn lại thì từ thấp đến cao.**
 > {% endhint %}
 >
-> * `iv` - Sort by the total IV of pokémon.
-> * `level` - Sort by the level of pokémon.
+> * `iv` - Thứ tự theo iv.
+> * `level` - Thứ tự theo cấp độ
 > * \[**auction search** only]:
->   * `bid` - Sort by the **Current Bid** of auctions.
->   * `ends` - Sort by the remaining duration of auctions
+>   * `bid` - Thứ tự theo cột **Current bid** khi dùng lệnh.
+>   * `ends` - Thứ tự theo thời gian kết thúc auction.
 > * \[**market search** only]:
->   * `price` - Sort by the **Price** of market listings.
->   * `id` - Sort by the [ID](https://cdn.discordapp.com/attachments/768175554402058313/936668421217734656/IMG\_20220128\_223543.jpg)s of market listings.
+>   * `price` - Thứ tự theo giá cả.
+>   * `id` - Thứ tự theo id(https://cdn.discordapp.com/attachments/768175554402058313/936668421217734656/IMG\_20220128\_223543.jpg)s khi dùng lệnh.
 
 <details>
 
-<summary>Commonly used aliases</summary>
+<summary>Bộ lọc viết tắt</summary>
 
 \--o
 
@@ -1547,7 +1547,7 @@ p!pokemon --level = 25
 
 <details>
 
-<summary>Commands</summary>
+<summary>Dùng được cho lệnh</summary>
 
 <mark style="color:green;">auction search</mark>
 
@@ -1571,16 +1571,16 @@ p!pokemon --level = 25
 
 <details>
 
-<summary>Examples</summary>
+<summary>Ví dụ</summary>
 
-Order **market search** by `price` ascending (low to high)
+Thứ tự giá các mặt hàng trên market theo thứ tự từ rẻ đến đắt.
 
 ```
 p!market search --order price
 p!market search --order price+
 ```
 
-Order **auction search** by `iv` descending
+Thứ tự các auction trên auction theo iv từ cao đến thấp.
 
 ```
 p!auction search --order iv
