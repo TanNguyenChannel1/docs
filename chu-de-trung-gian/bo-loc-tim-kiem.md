@@ -1525,7 +1525,7 @@ p!pokemon --level = 25
 > {% hint style="info" %}
 > **Nếu như bạn không thêm `+` hoặc `-` phía sau tiền tố lọc thì nó sẽ mặc định là theo thứ tự từ cao đến thấp đối với cấp độ và iv, còn lại thì từ thấp đến cao.**
 > {% endhint %}
->
+
 > * `iv` - Thứ tự theo iv.
 > * `level` - Thứ tự theo cấp độ
 > * \[**auction search** only]:
