@@ -1887,3 +1887,378 @@ p!trade addall --name Ralts --skip 3
 ```
 
 </details>
+
+
+#### --spatkiv `<integer>`
+
+> Filter for pokémon with the specified Special Attack/SPATK IV. You can use `>`, `<` or `=` to show greater than, less than or equal to the specified integer.
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--spatk
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+
+
+Pokémon with SPATK IV greater than 20
+
+```
+p!pokemon --spatkiv > 20
+```
+
+Pokémon with SPATK IV less than 30
+
+```
+p!pokemon --spatkiv < 30
+```
+
+Pokémon with SPATK IV greater than 20 but less than 30
+
+```
+p!pokemon --spatkiv > 20 --spatkiv < 30
+```
+
+Pokémon with SPATK IV equal to 25
+
+```
+p!pokemon --spatkiv 25
+p!pokemon --spatkiv = 25
+```
+
+</details>
+
+#### --spdefiv `<integer>`
+
+> Filter for pokémon with the specified Special Defense/SPDEF IV. You can use `>`, `<` or `=` to show greater than, less than or equal to the specified integer.
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--spdef
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+Pokémon with SPDEF IV greater than 20
+
+```
+p!pokemon --spdefiv > 20
+```
+
+Pokémon with SPDEF IV less than 30
+
+```
+p!pokemon --spdefiv < 30
+```
+
+Pokémon with SPDEF IV greater than 20 but less than 30
+
+```
+p!pokemon --spdefiv > 20 --spdefiv < 30
+```
+
+Pokémon with SPDEF IV equal to 25
+
+```
+p!pokemon --spdefiv 25
+p!pokemon --spdefiv = 25
+```
+
+</details>
+
+#### --spdiv `<integer>`
+
+> Filter for pokémon with the specified Speed/SPD IV. You can use `>`, `<` or `=` to show greater than, less than or equal to the specified integer.
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Examples</summary>
+
+Pokémon with SPD IV greater than 20
+
+```
+p!pokemon --spdiv > 20
+```
+
+Pokémon with SPD IV less than 30
+
+```
+p!pokemon --spdiv < 30
+```
+
+Pokémon with SPD IV greater than 20 but less than 30
+
+```
+p!pokemon --spdiv > 20 --spdiv < 30
+```
+
+Pokémon with SPD IV equal to 25
+
+```
+p!pokemon --spdiv 25
+p!pokemon --spdiv = 25
+```
+
+</details>
+
+#### --triple `<integer>`
+
+> Filter for pokémon that have atleast 3 stat IVs that are equal to `<integer>`. To elaborate, for a pokémon to match the criteria for this filter, 3 of its stat IVs, namely `HP`, `ATK`, `DEF`, `SPATK`, `SPDEF` and `SPD` IVs, need to be the same, equal to `<integer>`. This filter will also match combinations that are higher than 3.
+
+![E.g. this pokémon would match the criteria for p!pokemon --triple 31 because it has 3 equal stat IVs that are 31.](../.gitbook/assets/IMG\_20220130\_172840.jpg)
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--three
+
+\--trip
+
+\--tri
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:red;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --type `<type>`
+
+> Filter for pokémon that are of the type `<type>`. The type of a pokémon can be viewed by using the **pokedex** command.
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--t
+
+\--ty
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark>
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>&#x20;
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+<details>
+
+<summary>Types</summary>
+
+* [Normal](https://pokemondb.net/type/normal)
+* [Fire](https://pokemondb.net/type/fire)
+* [Water](https://pokemondb.net/type/water)
+* [Grass](https://pokemondb.net/type/grass)
+* [Electric](https://pokemondb.net/type/electric)
+* [Ice](https://pokemondb.net/type/ice)
+* [Fighting](https://pokemondb.net/type/fighting)
+* [Poison](https://pokemondb.net/type/poison)
+* [Ground](https://pokemondb.net/type/ground)
+* [Flying](https://pokemondb.net/type/flying)
+* [Psychic](https://pokemondb.net/type/psychic)
+* [Bug](https://pokemondb.net/type/bug)
+* [Rock](https://pokemondb.net/type/rock)
+* [Ghost](https://pokemondb.net/type/ghost)
+* [Dark](https://pokemondb.net/type/dark)
+* [Dragon](https://pokemondb.net/type/dragon)
+* [Steel](https://pokemondb.net/type/steel)
+* [Fairy](https://pokemondb.net/type/fairy)
+
+</details>
+
+#### --ub
+
+> Filter for [Ultra Beast pokémon](https://pokemon.fandom.com/wiki/Ultra\_Beasts) (pokémon with the **Ultra Beast** rarity, this can be seen in the **pokedex** command for a pokémon.) E.g. Pheromosa.
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--u
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:green;">auction search</mark>
+
+<mark style="color:green;">favoriteall</mark>
+
+<mark style="color:green;">market search</mark>
+
+<mark style="color:green;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark> (cannot be used alongside other rarity filters)
+
+<mark style="color:green;">pokemon</mark>
+
+<mark style="color:green;">releaseall</mark>
+
+<mark style="color:green;">trade addall</mark>
+
+<mark style="color:green;">unfavoriteall</mark>
+
+</details>
+
+#### --uncaught
+
+> Filter for all the uncaught pokémon in the **pokedex** command.&#x20;
+
+<details>
+
+<summary>Commonly used aliases</summary>
+
+\--unc
+
+\--un
+
+</details>
+
+<details>
+
+<summary>Commands</summary>
+
+<mark style="color:red;">auction search</mark>
+
+<mark style="color:red;">favoriteall</mark>
+
+<mark style="color:red;">market search</mark>
+
+<mark style="color:red;">nickall</mark>
+
+<mark style="color:green;">pokedex</mark>
+
+<mark style="color:red;">pokemon</mark>
+
+<mark style="color:red;">releaseall</mark>
+
+<mark style="color:red;">trade addall</mark>
+
+<mark style="color:red;">unfavoriteall</mark>
+
+</details>
